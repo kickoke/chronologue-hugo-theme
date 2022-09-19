@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Chronologue"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Theme for awesome documentation."
+homepage = "http://example.com/"
+tags = ["docs", "documentation"]
+features = ["annotations"]
+min_version = "0.0.01"
+
+[author]
+  name = "Tina Luedtke"
+  homepage = "wwww.kickoke.com"
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""
