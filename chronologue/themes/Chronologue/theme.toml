@@ -3,11 +3,11 @@
 
 name = "Chronologue"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+licenselink = "https://github.com/kickoke/chronologue-hugo-theme/blob/main/chronologue/themes/Chronologue/LICENSE"
 description = "Theme for awesome documentation."
 homepage = "http://example.com/"
 tags = ["docs", "documentation"]
-features = ["annotations"]
+features = ["annotations", "codeblocks"]
 min_version = "0.0.01"
 
 [author]

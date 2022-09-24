@@ -1,6 +1,9 @@
 ---
 title: Chronologue documentation
-layout: single
 ---
 
-# Chronologue
+# Chronologue Documentation
+
+Lorem ipsum dolor sit amet
+
+{{% sidenote %}}Sidenote content {{% /sidenote %}}

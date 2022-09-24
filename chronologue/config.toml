@@ -1,3 +1,12 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Chronologue'
+
+[params]
+copyright = "The Good Docs Project"
+logo = "/img/logo.svg"
+
+[module]
+[[module.imports]]
+   path = 'Chronologue'
+   disable = false
