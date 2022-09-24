@@ -2,11 +2,8 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Chronologue'
 
+theme = ['Chronologue']
+
 [params]
 copyright = "The Good Docs Project"
 logo = "/img/logo.svg"
-
-[module]
-[[module.imports]]
-   path = 'Chronologue'
-   disable = false
