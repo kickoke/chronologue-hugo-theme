@@ -17,4 +17,3 @@ vscode:
   extensions:
     - bradlc.vscode-tailwindcss
     - budparr.language-hugo-vscode
-    - eliostruyf.vscode-front-matter-beta
