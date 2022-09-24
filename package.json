@@ -1,0 +1,26 @@
+{
+  "name": "chronologue",
+  "version": "0.0.1",
+  "description": "Hugo Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/zivbk1/hugostarter.git"
+  },
+  "author": "Bryan Klein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/zivbk1/hugostarter/issues"
+  },
+  "homepage": "https://gitlab.com/zivbk1/hugostarter#readme",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.7",
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
+    "tailwindcss": "^3.1.8"
+  }
+}
