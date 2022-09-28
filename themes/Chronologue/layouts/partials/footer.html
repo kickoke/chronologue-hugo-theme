@@ -1,17 +1,19 @@
-<footer class="footer">
-<!-- Script enables using fontawesome icons-->
-<script defer src="/static/fontawesome/fontawesome-all.js"></script>
-<div class="footer-copyright">
-        <img src="{{ .Site.Params.Logo }}" alt="">
-        <p>2022 &copy;{{ .Site.Params.Copyright }}. Licensed under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></p> </div>
-    <div class="footer-links">
-    <p>Find us on the web!</p>
-    <ul>
-        <li><i class="fa-brands fa-github"></i>Github</li>
-        <li><i class="fa-brands fa-slack"></i> Slack</li>
-        <li><i class="fa-brands fa-twitter"></i>Twitter</li>
-    </ul>
-</div>
-<div class="footer-contribute"><i class="fa-regular fa-code-pull-request">Contribute</i></div>
+<footer class="bg-slate-800 text-white p-8 lg:flex lg:items-start lg:space-x-24 ">
+    <div class="footer-copyright">
+        <p>2022 &copy;{{ .Site.Params.Copyright }}. <br>Licensed under <a
+                href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></p><img src="{{ .Site.Params.Logo }}"
+            alt="" class="grayscale">
+    </div>
+    <div>
+        <p>Find us on the web!</p>
+        <ul>
+            <li><i class="fa-brands fa-github"></i> <a href="https://gitlab.com/tgdp/chronologue">GitLab</a></li>
+            <li><i class="fa-brands fa-slack"></i> <a
+                    href="https://join.slack.com/t/thegooddocs/shared_invite/zt-be2gay0m-Ukq_5SI0MHp20IQP3auQjg"> Slack</a>
+            </li>
+            <li><i class="fa-brands fa-twitter"></i> <a href="https://twitter.com/thegooddocs"> Twitter</a></li>
+        </ul>
+    </div>
+    <div>Do you want to showcase good documentation?<br><i class="fa-solid fa-code-pull-request"></i><a
+            href="https://gitlab.com/tgdp/chronologue#how-can-i-contribute-to-chronologue"> Contribute</a></div>
 </footer>
-

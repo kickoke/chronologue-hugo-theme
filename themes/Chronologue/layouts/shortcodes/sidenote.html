@@ -1,6 +1,6 @@
 {{ $type := .Get "type"}}
 
-<span class='w-80 font-bold text-white block lg:inline relative lg:absolute bg-red-500 p-4 lg:right-0
+<span class='w-80 font-bold text-white block lg:inline relative lg:absolute bg-red-500 p-4 lg:right-0 lg:-mt-4
   {{ if eq $type "warning"}}bg-yellow-500 text-gray-800{{ end }}
   {{ if eq $type "info"}}bg-blue-500{{ end }}
   '>

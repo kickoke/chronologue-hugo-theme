@@ -1154,20 +1154,8 @@ video {
   margin-bottom: 0;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
-}
-
-.right-0 {
-  right: 0px;
-}
-
-.right-8 {
-  right: 2rem;
 }
 
 .mx-auto {
@@ -1175,36 +1163,12 @@ video {
   margin-right: auto;
 }
 
-.ml-32 {
-  margin-left: 8rem;
-}
-
 .block {
   display: block;
 }
 
-.inline {
-  display: inline;
-}
-
 .contents {
   display: contents;
-}
-
-.h-0 {
-  height: 0px;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.w-32 {
-  width: 8rem;
-}
-
-.w-64 {
-  width: 16rem;
 }
 
 .w-80 {
@@ -1215,9 +1179,9 @@ video {
   max-width: 64rem;
 }
 
-.bg-green-500 {
+.bg-slate-800 {
   --tw-bg-opacity: 1;
-  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
 .bg-red-500 {
@@ -1235,12 +1199,17 @@ video {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
-.p-4 {
-  padding: 1rem;
+.bg-fuchsia-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(134 25 143 / var(--tw-bg-opacity));
 }
 
-.font-medium {
-  font-weight: 500;
+.p-8 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .font-bold {
@@ -1252,24 +1221,21 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-blue-500 {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
-}
-
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
-.hover\:text-blue-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+.grayscale {
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+/*Footer component*/
+
+footer a:hover {
+  color: #a5b4fc;
+  /*indigo-300*/
 }
 
 @media (min-width: 1024px) {
@@ -1281,7 +1247,25 @@ video {
     right: 0px;
   }
 
+  .lg\:-mt-4 {
+    margin-top: -1rem;
+  }
+
   .lg\:inline {
     display: inline;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
+  }
+
+  .lg\:space-x-24 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(6rem * var(--tw-space-x-reverse));
+    margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
   }
 }
