@@ -13,3 +13,7 @@ Describe what the Chronologue project does
 Chronologue a working group within [the Good Docs Project](https://thegooddocsproject.dev/). 
 
 ## How to contribute
+
+Short form. 
+
+Link to full contribution guide. 

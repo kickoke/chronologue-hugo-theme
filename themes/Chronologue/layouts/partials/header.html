@@ -1,9 +1,6 @@
-<header class="bg-fuchsia-800">
-<div class="header-title">
-<img src="{{ .Site.Params.Logo }}" alt="">
+<header class="bg-fuchsia-800 flex text-white text-xl p-8">
+<img src="{{ .Site.Params.Logo }}" alt="" class="inline-block rounded-full w-18 h-18 ring-2 ring-white">
 <h1>{{ .Site.Title }}</h1>
-</div>
-
 <div class="">
 <ul>
 {{ range.Site.Menus.main }}
@@ -13,7 +10,5 @@
 {{ end }}
 </ul>
 </div>
-
-<div class="header-contribute"></div>
 
 </header>

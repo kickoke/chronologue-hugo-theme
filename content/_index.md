@@ -1,6 +1,5 @@
 ---
-title: Chronologue documentation
-
+title: Chronologue
 ---
 
 # Chronologue Documentation
