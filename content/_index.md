@@ -1,5 +1,6 @@
 ---
 title: Chronologue
+layout: single
 ---
 
 # Chronologue Documentation

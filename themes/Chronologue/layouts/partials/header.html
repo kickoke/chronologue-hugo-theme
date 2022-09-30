@@ -1,10 +1,11 @@
-<header class="bg-fuchsia-800 flex text-white text-xl p-8">
-<img src="{{ .Site.Params.Logo }}" alt="" class="inline-block rounded-full w-18 h-18 ring-2 ring-white">
-<h1>{{ .Site.Title }}</h1>
-<div class="">
-<ul>
+<header class="bg-fuchsia-800 text-white text-xl mb-8">
+<div class="inline-block"><img src="{{ .Site.Params.Logo }}" alt="" class="inline-block rounded-full p-8">
+    <span class="text-3xl"><a href="/">{{ .Site.Title }}</a></span></div>
+<!--Header Menu items-->
+    <div class="pl-8">
+<ul class="lg:flex lg:items-start lg:space-x-12">
 {{ range.Site.Menus.main }}
-<li>
+<li class="hover:text-cyan-600">
     <a href="{{ .URL }}">{{ .Name }}</a>
 </li>
 {{ end }}

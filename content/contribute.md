@@ -1,10 +1,11 @@
 ---
 title: Contribute
 menu: main
+layout: single
 ---
-
+# Contribute to the Chronologue Project
 Todo: Write based off of the contributing template
 
 ## Writing Process
 
-## Contrbuting to Chronologue tech
+## Contributing to Chronologue tech

@@ -1,6 +1,6 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'Chronologue'
+title = 'The Chronologue Project | Documentation'
 
 theme = ['Chronologue']
 

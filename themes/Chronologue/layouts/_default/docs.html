@@ -1,0 +1,9 @@
+{{ define "nav" }}
+<aside>
+{{- partial "nav_docs.html" . -}}
+</aside>
+{{ end }}
+
+{{ define "main" }}
+ {{ .Content }}
+{{ end }}

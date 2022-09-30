@@ -1,6 +1,7 @@
 ---
 title: About
 menu: main
+layout: single
 ---
 
 ## What is Chronologue?
