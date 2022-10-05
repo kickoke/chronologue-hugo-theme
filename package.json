@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/zivbk1/hugostarter.git"
+    "url": "git+https://gitlab.com/kickoke/chronologue-hugo-theme.git"
   },
-  "author": "Bryan Klein",
+  "author": "Tina Luedtke",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/zivbk1/hugostarter/issues"
+    "url": "https://gitlab.com/kickoke/chronologue-hugo-theme/issues"
   },
-  "homepage": "https://gitlab.com/zivbk1/hugostarter#readme",
+  "homepage": "https://gitlab.com/kickoke/chronologue-hugo-theme#readme",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.7",
     "autoprefixer": "^10.4.12",
