@@ -4,6 +4,7 @@
   "description": "Hugo Site",
   "main": "index.js",
   "scripts": {
+    "dev": "hugo server -D -F --baseUrl $(gp url 1313) --appendPort=false --liveReloadPort=443 --bind=0.0.0.0",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
