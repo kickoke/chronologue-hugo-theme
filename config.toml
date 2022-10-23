@@ -1,9 +1,14 @@
-baseURL = 'http://example.org/'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'The Chronologue Project | Documentation'
 
 theme = ['Chronologue']
 
+enableGitInfo= true
+
+# Adapt to your project's needs
 [params]
 copyright = "The Good Docs Project"
 logo = "/img/logo.svg"
+github_repo = "https://github.com/kickoke/chronologue-hugo-theme"
+time_format_default = "January 2, 2006"
