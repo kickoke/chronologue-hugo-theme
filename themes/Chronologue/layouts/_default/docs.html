@@ -8,6 +8,13 @@
  {{ .Content }}
 {{ end }}
 
+
+<!-- New modules, I wonder why they don't show up...-->
+
 {{ define "metadata" }}
   {{- partial "page-meta-lastmod.html" . -}}
+{{ end }}
+
+{{ define "page_actions" }}
+{{- partial "page_actions.html" . -}}
 {{ end }}

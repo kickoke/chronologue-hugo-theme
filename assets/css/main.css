@@ -8,3 +8,9 @@
 footer a:hover {
     color: #a5b4fc; /*indigo-300*/
 }
+
+.debug {
+    border: 2px;
+    border-color: red;
+    border-style: dotted;
+}

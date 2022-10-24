@@ -1,0 +1,55 @@
+<!--This is a partials for controls to make actions to the page, 
+    such as edit page, open a documentation issue etc.
+Code mostly from Docsy (https://github.com/google/docsy/blob/dd2e2b94852a08ae1e529fd0d60390e50ec9c787/layouts/partials/page-meta-links.html)
+I've removed some features that I didn't think are necessary. 
+I would appreciate a review to make sure the code still makes sense.
+-->
+{{ if .File }}
+{{ $pathFormatted := replace .File.Path "\\" "/" -}}
+{{ $gh_repo := ($.Param "github_repo") -}}
+<!-- subdir is optional and used when the content directory differs from root.
+See https://www.docsy.dev/docs/adding-content/repository-links/#github_subdir-optional-->
+{{ $gh_subdir := ($.Param "github_subdir") -}}
+<!--Optional. 
+See https://www.docsy.dev/docs/adding-content/repository-links/#github_subdir-optional-->
+{{ $gh_project_repo := ($.Param "github_project_repo") -}}
+<!--Optional. 
+See https://www.docsy.dev/docs/adding-content/repository-links/#github_subdir-optional-->
+{{ $gh_branch := (default "main" ($.Param "github_branch")) -}}
+<div class="debug">
+{{ if $gh_repo -}}
+  {{ $gh_repo_path := printf "%s/content/%s" $gh_branch $pathFormatted -}}
+  {{ if and ($gh_subdir) (.Site.Language.Lang) -}}
+    {{ $gh_repo_path = printf "%s/%s/content/%s/%s" $gh_branch $gh_subdir ($.Site.Language.Lang) $pathFormatted -}}
+  {{ else if .Site.Language.Lang -}}
+    {{ $gh_repo_path = printf "%s/content/%s/%s" $gh_branch ($.Site.Language.Lang) $pathFormatted -}}
+  {{ else if $gh_subdir -}}
+    {{ $gh_repo_path = printf "%s/%s/content/%s" $gh_branch $gh_subdir $pathFormatted -}}
+  {{ end -}}
+
+  {{/* Adjust $gh_repo_path based on path_base_for_github_subdir */ -}}
+  {{ $ghs_base := $.Param "path_base_for_github_subdir" -}}
+  {{ $ghs_rename := "" -}}
+  {{ if reflect.IsMap $ghs_base -}}
+    {{ $ghs_rename = $ghs_base.to -}}
+    {{ $ghs_base = $ghs_base.from -}}
+  {{ end -}}
+  {{ with $ghs_base -}}
+    {{ $gh_repo_path = replaceRE . $ghs_rename $gh_repo_path -}}
+  {{ end -}}
+
+  {{ $viewURL := printf "%s/tree/%s" $gh_repo $gh_repo_path -}}
+  {{ $editURL := printf "%s/edit/%s" $gh_repo $gh_repo_path -}}
+  {{ $issuesURL := printf "%s/issues/new?title=%s" $gh_repo (safeURL $.Title ) -}}
+
+  <a href="{{ $viewURL }}" class="debug" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines fa-fw"></i> {{ T "post_view_this" }}</a>
+  <a href="{{ $editURL }}" class="debug" target="_blank" rel="noopener"><i class="fa-solid fa-pen-to-square fa-fw"></i> {{ T "post_edit_this" }}</a>
+  <a href="{{ $issuesURL }}" class="debug" target="_blank" rel="noopener"><i class="fa-solid fa-list-check fa-fw"></i> {{ T "post_create_issue" }}</a>
+
+{{ end -}}
+<!-- Docsy "Print this section" feature. If we want to keep it, we need probably other Docsy code, too.
+{{ with .CurrentSection.AlternativeOutputFormats.Get "print" -}}
+  <a id="print" href="{{ .Permalink | safeURL }}"><i class="fa-solid fa-print fa-fw"></i> {{ T "print_entire_section" }}</a>
+{{ end }} -->
+</div>
+{{ end -}}
